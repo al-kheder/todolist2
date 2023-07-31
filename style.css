@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height:100vh;
+    background: repeating-linear-gradient(45deg, #044561, #ebf8e1 15%, #f69d3c 20%);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 600px;
+    background: #FFF;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+}
+.todo-app h2{
+    color:#002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.row{
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   background: #edeef0;
+   border-top-right-radius: 70px;
+}
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+
+}
+.row button{
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+    border-top-right-radius: 70px;
+   }
+   .row button:hover{
+        background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+        background-color:#f24437;
+   }
+   ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position:relative;
+   }
+   ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+   }
+   ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+   }
+    ul li.checked::before{
+    background-image: url(images/checked.png);
+   }
+   ul li span{
+        position: absolute; 
+        right:5px;
+        top:5px;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        color: #555;
+        line-height: 40px;
+        text-align: center;
+    }
+    ul li span:hover{
+        background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+        background-color:#c62d1f;
+        border-radius: 50%;   
+    }
+
+ 
